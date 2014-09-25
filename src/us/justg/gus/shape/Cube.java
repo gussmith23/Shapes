@@ -1,15 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package us.justg.gus.shape;
 
-/**
- *
- * @author hfs5022
- */
 public class Cube extends ThreeDimensionalShape {
     
     private double a;
@@ -28,6 +18,11 @@ public class Cube extends ThreeDimensionalShape {
         return 6*Math.pow(getA(), 2);
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s It is a cube, with equal sides of length %f.", super.toString(), getA());
+    }
+    
     public double getA() {
         return a;
     }

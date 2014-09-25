@@ -1,15 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package us.justg.gus.shape;
 
-/**
- *
- * @author hfs5022
- */
 public class Sphere extends ThreeDimensionalShape {
     
     private double radius;
@@ -26,6 +16,11 @@ public class Sphere extends ThreeDimensionalShape {
     @Override
     public double getArea() {
         return 4.0*Math.PI*Math.pow(getRadius(), 2);
+    }
+    
+    @Override
+    public String toString() {
+        return String.format("%s It is a sphere, with radius of length %f.", super.toString(), getRadius());
     }
 
     public double getRadius() {
